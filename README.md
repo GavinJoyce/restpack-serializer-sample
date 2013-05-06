@@ -1,5 +1,7 @@
 ## restpack-serializer sample application
 
+[View the demo](http://restpack-serializer-sample.herokuapp.com/)
+
 ### getting started
 
 ```bundle install```
