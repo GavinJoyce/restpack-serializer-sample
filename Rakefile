@@ -8,9 +8,7 @@ RestpackSerializerSample::Application.load_tasks
 
 desc "Seed Artists, Albums and Songs"
 task :seed => :environment do
-  Song.destroy_all
-  Album.destroy_all
-  Artist.destroy_all
+  Rake::Task["db:reset"].invoke
 
   radiohead = Artist.create(name: 'Radiohead', website: 'http://radiohead.com/')
 
@@ -35,8 +33,6 @@ task :seed => :environment do
   ['The Past Recedes', 'Lever Pulled', 'Anne', 'The Real', 'A Name', 'Control', 'Your Warning', 'Hope', 'Ascension', 'Time Tonight', 'Leap Your Bar'].each do |title|
     Song.create(title: title, album: curtains, artist: john_frusciante)
   end
-
-
 
   p "There are #{Artist.count} artists, #{Album.count} albums and #{Song.count} songs"
 end

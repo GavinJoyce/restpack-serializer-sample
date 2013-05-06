@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>restpack-serializer demo</title>
+    </head>
+    <body>
+      <h1>restpack-serializer demo</h1>
+
+      <p>
+        <a href="https://github.com/RestPack/restpack-serializer">restpack-serializer</a> provides model serialization, paging, side-loading and filtering. It will implement the emerging <a href="http://jsonapi.org/">jsonapi.org</a> specification.
+      </p>
+
+      <p>These examples model <em>Artists --> Albums --> Songs</em></p>
+
+      <h4>Here are all artists:</h4>
+      <p><a href='/artists.json'>/artists.json</a></p>
+
+      <h4>and here are just two:</h4>
+      <p><a href='/artists.json?ids=1,2'>/artists.json?ids=1,2</a></p>
+
+      <h4>Let's side-load their albums:</h4>
+      <p><a href='/artists.json?ids=1,2&includes=albums'>/artists.json?ids=1,2&includes=albums</a></p>
+
+      <h4>Now we'll side-load albums and songs:</h4>
+      <p><a href='/artists.json?ids=1,2&includes=albums'>/artists.json?ids=1,2&includes=albums,songs</a></p>
+
+      <h4>Notice that as there may be a large number of songs (there are 31 in this case), we're only returning the first page here. I plan to add links to additional pages in the meta data, the URLs will take the following form:</h4>
+      <p><a href='/songs.json?artist_ids=1,2&page=2'>/songs.json?artist_ids=1,2&page=2</a></p>
+
+      <h4>or if we want to include side-loads:</h4>
+      <p><a href='/songs.json?artist_ids=1,2&page=2&includes=artists,albums'>/songs.json?artist_ids=1,2&page=2&includes=artists,albums</a></p>
+
+      <hr />
+      <h2>Source:</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/RestPack/restpack-serializer">restpack-serializer source</a>
+        </li>
+        <li>
+          <a href="https://github.com/GavinJoyce/restpack-serializer-sample">source for this demo</a>
+        </li>
+      </ul>
+
+    </body>
+</html>
