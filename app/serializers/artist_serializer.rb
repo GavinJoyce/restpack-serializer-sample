@@ -1,9 +1,10 @@
 class ArtistSerializer
   include RestPack::Serializer
 
-  attributes :id, :name, :website, :url
+  attributes :id, :name, :website, :href
+  can_include :albums, :songs
 
-  def url
+  def href
     "/artists/#{id}.json"
   end
 end
