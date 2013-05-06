@@ -1,6 +1,16 @@
-== restpack-serializer sample application
+## restpack-serializer sample application
 
-Here's some examples of how I plan to use conditional side-loading with restpack-serializer. These examples model Artists -> Albums -> Songs rails app source.
+### getting started
+
+```bundle install```
+
+```rake seed```
+
+```rails server```
+
+### about
+
+Here's some examples of how I plan to use conditional side-loading with [restpack-serializer](https://github.com/RestPack/restpack-serializer). These examples model ```Artists -> Albums -> Songs``` [rails app source](https://github.com/GavinJoyce/restpack-serializer-sample).
 
 Here is a collection of artists:
 
