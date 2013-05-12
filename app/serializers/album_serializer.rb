@@ -1,7 +1,7 @@
 class AlbumSerializer
   include RestPack::Serializer
 
-  attributes :id, :title, :year, :artist_id, :href
+  attributes :id, :title, :year, :href
   can_include :songs, :artists
 
   def href
