@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/RestPack/restpack-serializer.git
-  revision: e0a5a65c82b65de6f99e660f3533ea2b3a30d656
-  tag: e0a5a65c82b65de6f99e660f3533ea2b3a30d656
+  revision: 42d1350e6a2495579f41f78888edf0f2ce077891
+  tag: 42d1350e6a2495579f41f78888edf0f2ce077891
   specs:
     restpack-serializer (0.0.10)
       activerecord (>= 3.0)
