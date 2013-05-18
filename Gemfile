@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'restpack-serializer', tag: 'fe456a1', git: 'git://github.com/RestPack/restpack-serializer.git', require: 'restpack_serializer'
+gem 'restpack_serializer', '~> 0.2.1'
 gem 'rails-api'
 gem 'unicorn', '~> 4.6.2'
 
