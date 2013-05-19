@@ -4,4 +4,9 @@ RestpackSerializerSample::Application.routes.draw do
     resources :albums
     resources :songs
   end
+
+  #Original sample API urls:
+  resources :artists
+  resources :albums
+  resources :songs
 end
