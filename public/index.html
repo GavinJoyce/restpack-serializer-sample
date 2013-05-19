@@ -16,33 +16,33 @@
 
       <div style="padding: 10px; margin: 10px; background-color: lightblue">
         <h4>Here are all artists:</h4>
-        <p><a href='/api/v1/artists.json'>/artists.json</a></p>
+        <p><a href='/api/v1/artists.json'>/api/v1/artists.json</a></p>
 
         <h4>here are just two:</h4>
-        <p><a href='/api/v1/artists.json?ids=1,2'>/artists.json?ids=1,2</a></p>
+        <p><a href='/api/v1/artists.json?ids=1,2'>/api/v1/artists.json?ids=1,2</a></p>
 
         <h4>and here is a single artist resource:</h4>
-        <p><a href='/api/v1/artists.json?ids=1,2'>/artists/3.json</a></p>
+        <p><a href='/api/v1/artists.json?ids=1,2'>/api/v1/artists/3.json</a></p>
 
         <h4>Let's side-load their albums:</h4>
-        <p><a href='/api/v1/artists.json?ids=1,2&includes=albums'>/artists.json?ids=1,2&includes=albums</a></p>
+        <p><a href='/api/v1/artists.json?ids=1,2&includes=albums'>/api/v1/artists.json?ids=1,2&includes=albums</a></p>
 
         <h4>Now we'll side-load albums and songs:</h4>
-        <p><a href='/api/v1/artists.json?ids=1,2&includes=albums,songs'>/artists.json?ids=1,2&includes=albums,songs</a></p>
+        <p><a href='/api/v1/artists.json?ids=1,2&includes=albums,songs'>/api/v1/artists.json?ids=1,2&includes=albums,songs</a></p>
 
         <h4>Notice that as there may be a large number of songs (there are 31 in this case), we're only returning the first page here. I plan to add links to additional pages in the meta data, the URLs will take the following form:</h4>
-        <p><a href='/api/v1/songs.json?artist_ids=1,2&page=2'>/songs.json?artist_ids=1,2&page=2</a></p>
+        <p><a href='/api/v1/songs.json?artist_ids=1,2&page=2'>/api/v1/songs.json?artist_ids=1,2&page=2</a></p>
 
         <h4>or if we want to include side-loads:</h4>
-        <p><a href='/api/v1/songs.json?artist_ids=1,2&page=2&includes=artists,albums'>/songs.json?artist_ids=1,2&page=2&includes=artists,albums</a></p>
+        <p><a href='/api/v1/songs.json?artist_ids=1,2&page=2&includes=artists,albums'>/api/v1/songs.json?artist_ids=1,2&page=2&includes=artists,albums</a></p>
       </div>
 
       <div style="padding: 10px; margin: 10px; background-color: lightgreen">
         <h4>Let's grab two songs by ID</h4>
-        <p><a href='/api/v1/songs.json?ids=1,33'>/songs.json?ids=1,33</a></p>
+        <p><a href='/api/v1/songs.json?ids=1,33'>/api/v1/songs.json?ids=1,33</a></p>
 
         <h4>And include related data:</h4>
-        <p><a href='/api/v1/songs.json?ids=1,33&includes=albums,artists'>/songs.json?ids=1,33&includes=albums,artists</a></p>
+        <p><a href='/api/v1/songs.json?ids=1,33&includes=albums,artists'>/api/v1/songs.json?ids=1,33&includes=albums,artists</a></p>
       </div>
 
 
