@@ -5,6 +5,6 @@ class SongSerializer
   can_include :artists, :albums
 
   def href
-    "/songs/#{id}.json"
+    "#{RestPack::Serializer.href_prefix}/songs/#{id}.json"
   end
 end
