@@ -13,7 +13,7 @@ task :seed => :environment do
   radiohead = Artist.create(name: 'Radiohead', website: 'http://radiohead.com/')
 
   kid_a = Album.create(title: 'Kid A', year: 2000, artist: radiohead)
-  ['Everything in its Right Place', 'Kid A', 'The National Anthem', 'How to Dissapear Completely', 'Treedfingers', 'Optimistic', 'In Limbo', 'Idioteque', 'Morning Bell', 'Motion Picture Soundtrack'].each do |title|
+  ['Everything in its Right Place', 'Kid A', 'The National Anthem', 'How to Dissapear Completely', 'Treefingers', 'Optimistic', 'In Limbo', 'Idioteque', 'Morning Bell', 'Motion Picture Soundtrack'].each do |title|
     Song.create(title: title, album: kid_a, artist: radiohead)
   end
 
