@@ -1,5 +1,7 @@
 ## restpack_serializer sample application
 
+**This is a sample application which demonstrates the [restpack_serializer](https://github.com/RestPack/restpack_serializer) gem**
+
 [View the demo](http://restpack-serializer-sample.herokuapp.com/)
 
 ### getting started
