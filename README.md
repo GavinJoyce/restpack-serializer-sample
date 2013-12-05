@@ -8,7 +8,7 @@
 
 ```bundle install```
 
-```rake seed```
+```rake db:seed```
 
 ```rails server```
 
@@ -26,11 +26,11 @@ http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2
 
 Let's side-load their albums:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2&includes=albums
+http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2&include=albums
 
 Now we'll side-load albums and songs:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2&includes=albums,songs
+http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2&include=albums,songs
 
 Notice that as there may be a large number of songs (there are 31 in this case), we're only returning the first page here. I plan to add links to additional pages in the meta data, the URLs will take the following form:
 
@@ -38,6 +38,5 @@ http://restpack-serializer-sample.herokuapp.com/api/vi/songs.json?artist_ids=1,2
 
 or if we want to include side-loads:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/songs.json?artist_ids=1,2&page=2&includes=artists,albums
+http://restpack-serializer-sample.herokuapp.com/api/vi/songs.json?artist_ids=1,2&page=2&include=artists,albums
 
-I plan to implement some of the json-api draft in the coming days so expect the JSON output to become more familiar soon.

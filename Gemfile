@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'restpack_serializer', '~> 0.2.7'
-
-gem 'rails', '3.2.13'
+gem 'restpack_serializer', '~> 0.4.9'
+gem 'rails', '~> 4.0.2'
 gem 'rails-api'
+gem 'protected_attributes'
 gem 'unicorn', '~> 4.6.2'
 
 group :development do

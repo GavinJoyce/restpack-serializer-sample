@@ -35,5 +35,7 @@ RestpackSerializerSample::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  RestPack::Serializer.href_prefix = 'http://localhost:3000/api/v1'
+  RestPack::Serializer.setup do |config|
+    config.href_prefix = 'http://localhost:3000/api/v1'
+  end
 end
