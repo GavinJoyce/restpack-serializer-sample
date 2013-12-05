@@ -65,5 +65,7 @@ RestpackSerializerSample::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  RestPack::Serializer.href_prefix = '/api/v1'
+  RestPack::Serializer.setup do |config|
+    config.href_prefix = '/api/v1'
+  end
 end
