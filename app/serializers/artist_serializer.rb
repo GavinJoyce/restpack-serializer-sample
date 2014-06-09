@@ -3,4 +3,5 @@ class ArtistSerializer
 
   attributes :id, :name, :website, :href
   can_include :albums, :songs
+  can_sort_by :id, :name
 end
