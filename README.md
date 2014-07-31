@@ -18,25 +18,25 @@ Here's some examples of how I plan to use conditional side-loading with [restpac
 
 Here is a collection of artists:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json
+http://restpack-serializer-sample.herokuapp.com/api/v1/artists.json
 
 And here are just two:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2
+http://restpack-serializer-sample.herokuapp.com/api/v1/artists.json?ids=1,2
 
 Let's side-load their albums:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2&include=albums
+http://restpack-serializer-sample.herokuapp.com/api/v1/artists.json?ids=1,2&include=albums
 
 Now we'll side-load albums and songs:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/artists.json?ids=1,2&include=albums,songs
+http://restpack-serializer-sample.herokuapp.com/api/v1/artists.json?ids=1,2&include=albums,songs
 
 Notice that as there may be a large number of songs (there are 31 in this case), we're only returning the first page here. I plan to add links to additional pages in the meta data, the URLs will take the following form:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/songs.json?artist_ids=1,2&page=2
+http://restpack-serializer-sample.herokuapp.com/api/v1/songs.json?artist_ids=1,2&page=2
 
 or if we want to include side-loads:
 
-http://restpack-serializer-sample.herokuapp.com/api/vi/songs.json?artist_ids=1,2&page=2&include=artists,albums
+http://restpack-serializer-sample.herokuapp.com/api/v1/songs.json?artist_ids=1,2&page=2&include=artists,albums
 
