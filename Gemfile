@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'restpack_serializer', '~> 0.4.11'
+gem 'restpack_serializer', '~> 0.5.0'
 gem 'rails', '~> 4.0.2'
 gem 'rails-api'
 gem 'protected_attributes'

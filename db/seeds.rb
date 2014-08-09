@@ -1,3 +1,9 @@
+Payment.delete_all
+Fan.delete_all
+Song.delete_all
+Album.delete_all
+Artist.delete_all
+
 radiohead = Artist.create(name: 'Radiohead', website: 'http://radiohead.com/')
 
 kid_a = Album.create(title: 'Kid A', year: 2000, artist: radiohead)
@@ -22,4 +28,11 @@ curtains = Album.create(title: 'Curtains', year: 2005, artist: john_frusciante)
   Song.create(title: title, album: curtains, artist: john_frusciante)
 end
 
-p "There are #{Artist.count} artists, #{Album.count} albums and #{Song.count} songs"
+gavin = Fan.create(name: 'Gavin Joyce')
+gavin.payments << Payment.create(amount: 10.33, artist: radiohead)
+gavin.payments << Payment.create(amount: 12.22, artist: john_frusciante)
+
+alex = Fan.create(name: 'Alex Joyce')
+alex.payments << Payment.create(amount: 4.45, artist: radiohead)
+
+p "There are #{Artist.count} artists, #{Album.count} albums, #{Song.count} songs, #{Fan.count} fans and #{Payment.count} payments"

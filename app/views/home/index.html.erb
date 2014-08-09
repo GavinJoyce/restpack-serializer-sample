@@ -27,8 +27,8 @@
         <h4>Let's side-load their albums:</h4>
         <p><a href='/api/v1/artists.json?ids=1,2&include=albums'>/api/v1/artists.json?ids=1,2&include=albums</a></p>
 
-        <h4>Now we'll side-load albums and songs:</h4>
-        <p><a href='/api/v1/artists.json?ids=1,2&include=albums,songs'>/api/v1/artists.json?ids=1,2&include=albums,songs</a></p>
+        <h4>Now we'll side-load albums, songs and fans:</h4>
+        <p><a href='/api/v1/artists.json?ids=1,2&include=albums,songs,fans'>/api/v1/artists.json?ids=1,2&include=albums,songs,fans</a></p>
 
         <h4>Notice that as there may be a large number of songs (there are 31 in this case), we're only returning the first page here. The <em>meta.songs.next_href</em> property links to the next page of song data:</h4>
         <p><a href='/api/v1/songs.json?artist_ids=1,2&page=2'>/api/v1/songs.json?artist_ids=1,2&page=2</a></p>
